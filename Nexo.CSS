@@ -1,0 +1,183 @@
+:root{
+    --colorPrimero: #0d0d0d0d;
+    --colorSecundario: #f3e9e9ee;
+    --naranga: #f18a1bf5;
+    --blanco: #ffb988;
+    --fuente: "Barlow", sans-serif;
+}
+*{box-sizing: border box; margin: 0; padding: 0;}
+
+body{
+    font-family:  var(--fuente);
+    background-color: var(--colorPrimero);
+    color: var(--colorSecundario);
+}
+/*--NAVBAR--*/
+header{
+    position:  fixed;
+    top: 0; left: 0; width: 100%;
+    background-color: var(--blanco);
+    padding: 1rem 2rem;
+    z-index: flex;
+    justify-content:  space-between;
+    align-items: center;
+
+}
+.logo{
+    color: var(--colorSecundario); text-decoration: none; font-weight: 900; font-size: 1.2rem;
+}
+nav ul{
+    list-style: none; display: flex;gap: 2rem;
+}
+nav a{
+    color: var(--colorSecundario); text-decoration: none;font-weight: 600;
+}
+nav a:hover{ color: var(--naranga);}
+main{
+    padding-top: 80px;
+}
+/*--HERO--*/
+.hero{
+    position: relative;
+    height: 100vh;
+    background-image: url("bajarimagen");
+    background-size: cover;
+    background-position: center;
+
+}
+.hero ::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--colorPrimero);
+}
+.hero ::content{
+    position: absolute;
+    top:50%; left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;    
+    text-align: center;
+}
+.hero ::content h1{
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.hero::content p{ font-size: 1.25rem; margin: 1rem 0 2rem;}
+.btn-hero{
+    display: inline-block;
+    background: var(--naranga);
+    color: var(--colorSecundario);
+    padding: 0.85rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+.btn-hero:hover{
+    background: #C8540f;
+
+}
+/*--SECCIONES GENERALES--*/
+section{
+ padding:  5rem 2rem;
+ max-width: 1100px;
+ margin: 0auto;}
+
+ h2{
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+    color: var(--naranga);
+
+ }
+ /*--GRILLA DE PLANES--*/
+
+ .planes{
+    display: grid;
+    grid-template-columns: repeat(3 , flr);
+    gap: 2rem;
+ }
+ .plan-card{
+    position: relative;
+    background: var(--colorSecundario);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #3333;
+
+ }
+ .plan-card h3 {font-size: 1.4rem; margin-bottom: 0.5rem;}
+ .precio{
+    color: var(--naranga);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+
+ }
+ .plan-card ul{
+    list-style: none;
+ }
+ .plan-card li{
+    padding: 0.4rem 0;  border-bottom: 1px solid #333;
+ }
+ .plan-card li::before{
+    content: normal; color: var(--naranga)
+ }/*recomendado*/
+
+ .recomendado{
+    position: absolute;
+    top: -14px; left: 50%;
+    transform: translateX(-50%);
+    background: var(--naranga)
+    color: aliceblue;
+    padding: 4px;
+    border-radius: 999 px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    white-space: nowrap;
+ }
+ /*-Gris asimetrico de los instructores*/
+ .instructores{
+    display: grid;
+    grid-template-columns:  1fr 2fr;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+ }
+.instructores img{
+    width:  100%;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 350px;
+
+}
+.bio h3{
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+.bio p{
+    margin-bottom: 0.75rem; color: aliceblue; line-height: 1.6;
+}
+/*Tabla horarios*/
+.Table{
+    width: 100%;border-collapse: collapse; margin-top: 1.5rem;
+}
+th, td{
+    padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid #333;
+
+}
+th{background: var(--colorPrimero);color: var(--naranga)}
+
+fotter{
+    background: var(--colorSecundario);
+    padding: 2rem;
+    text-align: center;
+    border-top:  2px solid var(--blanco);
+
+}
+fotter a{color: var(--naranga);}
+footer p{margin-bottom: 0.5rem;}
