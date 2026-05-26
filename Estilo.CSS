@@ -1,0 +1,71 @@
+/*Variables de la paleta de la pagina*/
+:root{
+   --color-fondo1: #6D3C1C; /*Colores utilizados tipicamente por paginas web de rescate por ser calidos y confiables*/
+    --color-texto: #1a1a1a;
+    --Color-Fondo: #F7F9FA;
+    --Detalles: #C58B4E;
+   
+    --fuente-principal: "Inter", sans-serif;
+}
+/*Reset basico*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--fuente-principal);
+    font-size: 18px;
+    color: var(--color-texto);
+    background-color: var(--Color-Fondo);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+/*Tipografia*/
+h1{
+    font-size: 2rem; color: var(--color-texto);
+
+}
+h2{
+    font-size: 1.5rem; color: var(--color-texto)
+}
+h3{
+    font-size: 1rem; color: var(--color-texto);
+}
+p{
+    margin-bottom: 1rem;
+}
+header{
+    background-color:  var(--color-fondo1);
+    color: var(--Color-Fondo);
+    padding: 1rem 1.5rem;
+}
+header h1{
+  color: var(--Color-Fondo);  
+}
+/*Navegacion*/
+nav{
+    margin-top: 0.5rem;
+}
+nav ul{
+    color: var(--color-fondo1)
+}
+nav a{
+    color: var(--Color-Fondo);
+    text-decoration: none;
+    font-weight: 600;
+}
+section{
+ padding:  5rem 2rem;
+ max-width: 1100px;
+ margin: 0 auto;
+}
+article{
+    background-color: var(--Detalles);
+    color:var(--color-texto);
+}
+footer{
+    background-color: var(--Detalles);
+    color: var(--color-texto);
+}
