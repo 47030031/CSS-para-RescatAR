@@ -65,7 +65,37 @@ article{
     background-color: var(--Detalles);
     color:var(--color-texto);
 }
+figure{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,fr));
+    gap: 15px;
+    justify-items: center;
+}
+/*Imagenes galeria*/
+figure img{
+    width: 200px;/*ancho fijo en pixeles*/
+    height: 100px;/*Anchofijo en pixeles*/
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+figcaption{
+    grid-column: 1/-1;
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+}
+section img {
+  width: 800px;
+  height: 300px;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
 footer{
     background-color: var(--Detalles);
     color: var(--color-texto);
+    padding: 10px 20px; /* menos espacio interno */
+    font-size: 14px;    /* texto más pequeño */
 }
