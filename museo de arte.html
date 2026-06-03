@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width">
+  <title>Museo de arte</title>
+  <!--Bootstrap 5.3.3-->
+  <link rel="stylesheet" href="https://cdn.jsdeliver.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="ESTILO.CSS">
+</head>
+<body>
+    <!--Navvar bootstrap-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="./index.html">MACQ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="#navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" a href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" a href="./Exposicion.html">Expocion</a></li>
+                    <li class="nav-item"><a href="./visitas.html">Visitas Planficadas</a></li>
+                    <li class="nav-item"><a href="./contacto.html">Contactanos</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!--Hero simple-->
+    <section class="hero-museo text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Museo de arte contemporaneo Quilmes</h1>
+            <p class="lead">Arte que transporta a la comunidad quilmena desde 1990</p>
+            <a href="./Exposicion.html" class="btn-warning btn-lg mt-3">Ver exposicion</a>
+        </div>
+    </section>
+
+<!--GRilla de exposicion en grilla de bootstrap-->`
+<section class="py-5">
+    <div class="container">
+        <h2 class="mb-4">Exposiciones en cartel</h2>
+        <div class="row-md-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://fastly.picsum.photos/id/237/536/354.jpg?hmac=i0yVXW1ORpyCZpQ-CknuyV-jbtU7_x9EBQVhvT5aRr0" alt="Arte urbano contemporaneo">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-warning text-dark mb-2">Hasta el 30/6</span>
+                        <h5 class="card-title">Arte urbano contemporaneo en el MACQ</h5>
+                        <p class="card-text flex-grow-1">
+                            15 artistas del conourbano bonaerense exploran la calle para transmitir emocion
+                        </p>
+                        <a href="#" class="btn-outline-dark mt-auto">Ver exposicion</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA" alt="Fotografía Documental">
+                     <div class="card-body d-flex flex-column">
+                        <span class="badge bg-success  mb-2">Permanente</span>
+                        <h5 class="card-title">Fotografía Documental</h5>
+                        <p class="card-text flex-grow-1">
+                            Registro visual de la montaña del Gran Buenos Aires con un poco de Libertad"inserte bandera estadounidense"
+                        </p>
+                        <a href="#" class="btn-outline-dark mt-auto">Ver exposicion</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA" alt="Fotografía Documental">
+                     <div class="card-body d-flex flex-column">
+                        <span class="badge bg-warning text-dark mb-2">Permanente</span>
+                        <h5 class="card-title">Pues otro más</h5>
+                        <p class="card-text flex-grow-1">
+                            MOOOORRRREEEEE
+                        </p>
+                        <a href="#" class="btn-outline-dark mt-auto">Ver exposicion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+        <p class="mb-1">
+            Museo ARte contemporaneo Quilmes
+        </p>
+        <p class="mb-0 text-muted small">
+            AV.Mitre.840, Quilmes,Buenos Aires.
+        </p>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
